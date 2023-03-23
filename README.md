@@ -46,7 +46,7 @@ Your Simple VM app should now be running at http://localhost:3000.
 This project is licensed under the MIT License.
 
 ## Support
-If you have any questions or need assistance, please create an issue in the repository, and we will do our best to help.
+If you have any questions or need assistance, please create an issue in the repository, and i will do my best to help.
 
 ## Acknowledgments
 [Next.js](https://nextjs.org/)
