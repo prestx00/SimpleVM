@@ -134,6 +134,6 @@ var Index = function () {
                 React.createElement(StyledLabelInput_1["default"], { label: "OpCode", name: "opcode", id: "opcode", type: "text", placeholder: "add new opcode, e.g 022", tooltipText: "opcode", inputRef: opCodeRef }),
                 error && (React.createElement("div", { style: { color: "red", fontSize: "12px" } }, error)),
                 React.createElement(OpCodeString_1["default"], null),
-                React.createElement(ResultAndExecute_1["default"], { spinner: BeatLoader_1["default"], loader: loader, result: result ? result : "" })))));
+                React.createElement(ResultAndExecute_1["default"], { spinner: BeatLoader_1["default"], loader: loader, result: result ? result + "" : "" })))));
 };
 exports["default"] = Index;

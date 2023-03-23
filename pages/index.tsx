@@ -13,7 +13,7 @@ import {
 import BeatLoader from "react-spinners/BeatLoader";
 
 const Index = () => {
-  const [result, setResult] = useState<string | undefined>();
+  const [result, setResult] = useState<number[] | undefined>();
   const [loader, setLoader] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
   const stackRef = useRef<HTMLInputElement>(null);
@@ -109,7 +109,7 @@ const Index = () => {
           <ResultAndExecute
             spinner={BeatLoader}
             loader={loader}
-            result={result ? result : ""}
+            result={result ? result + "" : ""}
           />
         </StyledFormContainer>
       </Layout>

@@ -1,7 +1,8 @@
 import { Contract } from "ethers";
 import defaultProvider from "./defaultProvider";
+import { SimpleVMContractMethods } from "./SimpleVMContractMethods";
 
-const ABI = [
+export const abi = [
   {
     anonymous: false,
     inputs: [
@@ -42,9 +43,9 @@ const ABI = [
 ];
 
 const SimpleVM = new Contract(
-  "0x31c415D6530eEb98b43f413F639309365195B830",
-  ABI,
+  "0xE7A9fA2403b50618AE777f9E066bf90aF9d92210",
+  abi,
   defaultProvider
-);
+) as Contract & SimpleVMContractMethods;
 
 export default SimpleVM;
